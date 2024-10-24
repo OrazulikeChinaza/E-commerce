@@ -111,3 +111,14 @@ currentProductColors.forEach((color,index)=>{
     currentProductImg.src =chosenProduct.colors[index].img
   });
 });
+
+currentProducSizes.forEach((size,index)=>{
+  size.addEventListener("click",()=>{
+    currentProducSizes.forEach(size=>{
+      size.style.backgroundColor ="white"
+      size.style.color ="black" 
+    });
+    size.style.backgroundColor ="black"
+    size.style.color ="white"
+  });
+});
